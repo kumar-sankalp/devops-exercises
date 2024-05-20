@@ -578,7 +578,9 @@ One clear use case is running Control Plane Pods -  running Pods such as kube-ap
 <summary>How to identify which Pods are Static Pods?</summary><br><b>
 
 The suffix of the Pods is the same as the name of the nodes on which they are running
-TODO: check if it's always the case.
+Static Pods typically have an annotation kubernetes.io/config.source: file. This annotation indicates that the Pod was created from a static Pod manifest file.
+Static Pods typically have an annotation kubernetes.io/config.source: file. This annotation indicates that the Pod was created from a static Pod manifest file.
+
 </b></details>
 
 <details>
